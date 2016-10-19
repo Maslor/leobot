@@ -29,11 +29,7 @@ recastClient.textRequest(session.message.text)
 
 // Server Init
 const server = restify.createServer()
-server.get('/', respond);
-
 var port = process.env.PORT || 5000;
-server.listen(port, function() {
-    console.log("Listening on " + port);
-});
+server.listen(port)
 server.post('/', connector.listen())
 
