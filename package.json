@@ -4,7 +4,7 @@
   "description": "",
   "main": "pokebot.js",
   "scripts": {
-    "start": "node pokebot.js"  
+    "start": "node index.js"  
 },
   "author": "",
   "license": "ISC",
