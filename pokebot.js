@@ -29,7 +29,6 @@ recastClient.textRequest(session.message.text)
 
 // Server Init
 const server = restify.createServer()
-var port = process.env.PORT || 5000;
-server.listen(port)
+server.listen(8080)
 server.post('/', connector.listen())
 
